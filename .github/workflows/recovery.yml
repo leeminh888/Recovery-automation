@@ -3,16 +3,16 @@ on:
   workflow_dispatch:
     inputs:
       manifest:
-        description: repo init --depth=1 -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-9.0
+        description: 'Recovery Manifest URL with -b branch'
         required: true
       vendor:
-        description: device/vsmart/V430A
+        description: 'Device Company / OEM / Vendor, i.e., xiaomi'
         required: true
       codename:
-        description: V430A
+        description: 'Device Codename i.e rosy'
         required: true
       dt_link:
-        description: https://github.com/leeminh888/android_device_vsmart_V430A
+        description: 'Device Tree link, with optional -b branch'
         required: true
       kernel_link:
         description: 'Kernel repo link with optional -b branch, Use if not prebuilt'
